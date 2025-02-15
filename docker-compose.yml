@@ -10,4 +10,7 @@ services:
     environment:
       - NEXT_SHARP_PATH=/usr/local/lib/node_modules/sharp
     ports:
-      - 2323:2323
+      - 13323:2323
+networks:
+  luna_network:
+    external: true
