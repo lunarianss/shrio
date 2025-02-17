@@ -187,7 +187,7 @@ const Hero = () => {
           )}
         >
           <small className="text-center">
-            当第一颗卫星飞向大气层外，我们便以为自己终有一日会征服宇宙。
+            I keep dancing on my own.
           </small>
           <span className="mt-8 animate-bounce">
             <i className="i-mingcute-right-line rotate-90 text-2xl" />
