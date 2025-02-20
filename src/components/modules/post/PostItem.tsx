@@ -45,9 +45,9 @@ export const PostItem = memo<{ data: PostModel }>(function PostItem({ data }) {
               style={{ backgroundImage: `url(${hasImage})` }}
             />
           )}
-          <p className="break-all leading-loose text-gray-800/90 dark:text-gray-200/90">
+          {/* <p className="break-all leading-loose text-gray-800/90 dark:text-gray-200/90">
             {displayText}
-          </p>
+          </p> */}
         </div>
       </div>
 
