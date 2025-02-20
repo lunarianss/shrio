@@ -2,9 +2,6 @@ import type { ReactNode } from 'react'
 import { createElement as h } from 'react'
 
 import {
-  FaSolidCircle,
-  FaSolidCircleNotch,
-  FaSolidComments,
   FaSolidDotCircle,
   FaSolidFeatherAlt,
   FaSolidHistory,
@@ -12,8 +9,6 @@ import {
   IcTwotoneSignpost,
   IonBook,
   MdiFlask,
-  MdiLightbulbOn20,
-  RMixPlanet,
 } from '~/components/icons/menu-collection'
 
 export interface IHeaderMenu {
@@ -33,7 +28,7 @@ export const headerMenuConfig: IHeaderMenu[] = [
     subMenu: [],
   },
   {
-    title: '文稿',
+    title: '博文',
     path: '/posts',
     type: 'Post',
     subMenu: [],
@@ -53,60 +48,26 @@ export const headerMenuConfig: IHeaderMenu[] = [
     path: '/timeline',
     subMenu: [
       {
-        title: '手记',
-        icon: h(FaSolidFeatherAlt),
-        path: '/timeline?type=note',
-      },
-      {
-        title: '文稿',
+        title: '博文',
         icon: h(IonBook),
         path: '/timeline?type=post',
       },
       {
-        title: '回忆',
-        icon: h(FaSolidCircle),
-        path: '/timeline?memory=1',
-      },
-      {
-        title: '专栏',
-        path: '/notes/topics',
-        icon: h('i', {
-          className: 'i-mingcute-align-bottom-fill flex center',
-        }),
+        title: '手记',
+        icon: h(FaSolidFeatherAlt),
+        path: '/timeline?type=note',
       },
     ],
+  },
+  {
+    title: '项目',
+    icon: h(MdiFlask),
+    path: '/projects',
+    subMenu: [],
   },
   {
     title: '友链',
     icon: h(FaSolidUserFriends),
     path: '/friends',
-  },
-
-  {
-    title: '更多',
-    icon: h(FaSolidCircleNotch),
-    path: '#',
-    subMenu: [
-      {
-        title: '思考',
-        icon: h(MdiLightbulbOn20),
-        path: '/thinking',
-      },
-      {
-        title: '项目',
-        icon: h(MdiFlask),
-        path: '/projects',
-      },
-      {
-        title: '一言',
-        path: '/says',
-        icon: h(FaSolidComments),
-      },
-      {
-        title: '跃迁',
-        icon: h(RMixPlanet),
-        path: 'https://travel.moe/go.html',
-      },
-    ],
   },
 ]
