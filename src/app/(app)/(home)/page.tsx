@@ -9,14 +9,11 @@ import { createElement } from 'react'
 
 import { ErrorBoundary } from '~/components/common/ErrorBoundary'
 import {
-  FaSolidComments,
   FaSolidFeatherAlt,
   FaSolidHistory,
   FaSolidUserFriends,
   IcTwotoneSignpost,
   MdiFlask,
-  MdiLightbulbOn20,
-  RMixPlanet,
 } from '~/components/icons/menu-collection'
 import { isSupportIcon, SocialIcon } from '~/components/modules/home/SocialIcon'
 import { usePresentSubscribeModal } from '~/components/modules/subscribe'
@@ -186,9 +183,7 @@ const Hero = () => {
             'center text-neutral-800/80 dark:text-neutral-200/80',
           )}
         >
-          <small className="text-center">
-            I keep dancing on my own.
-          </small>
+          <small className="text-center">I keep dancing on my own.</small>
           <span className="mt-8 animate-bounce">
             <i className="i-mingcute-right-line rotate-90 text-2xl" />
           </span>
@@ -239,24 +234,9 @@ const windsock = [
     path: '/friends',
   },
   {
-    title: '写下一点思考',
-    icon: MdiLightbulbOn20,
-    path: '/thinking',
-  },
-  {
-    title: '看看我做些啥',
+    title: '我的开源项目',
     icon: MdiFlask,
     path: '/projects',
-  },
-  {
-    title: '记录下一言',
-    path: '/says',
-    icon: FaSolidComments,
-  },
-  {
-    title: '跃迁',
-    icon: RMixPlanet,
-    path: 'https://travel.moe/go.html',
   },
 ]
 

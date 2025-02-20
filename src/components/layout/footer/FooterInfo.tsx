@@ -3,7 +3,6 @@ import type { JSX } from 'react'
 
 import { fetchAggregationData } from '~/app/(app)/api'
 import { IonIosArrowDown } from '~/components/icons/arrow'
-import { SubscribeTextButton } from '~/components/modules/subscribe/SubscribeTextButton'
 import { FloatPopover } from '~/components/ui/float-popover'
 import { MLink } from '~/components/ui/link'
 import { clsxm } from '~/lib/helper'
@@ -185,21 +184,6 @@ const FooterBottom = async () => {
           <OwnerName />
         </a>
         <span>.</span>
-        <span>
-          <Divider />
-          <a href="/feed" target="_blank" rel="noreferrer">
-            RSS
-          </a>
-          <Divider />
-          <a href="/sitemap.xml" target="_blank" rel="noreferrer">
-            站点地图
-          </a>
-          <Divider className="inline" />
-
-          <SubscribeTextButton>
-            <Divider className="hidden md:inline" />
-          </SubscribeTextButton>
-        </span>
         <span className="mt-3 block md:mt-0 md:inline">
           Stay hungry. Stay foolish.
         </span>
